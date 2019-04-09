@@ -11,10 +11,10 @@ from sklearn.linear_model import Perceptron
 net = Perceptron()
 net.fit(X_train, y_train)
 print (net)
-net.coef_
-net.intercept_
-net.n_iter_
-net.score(X, y)*100
+net.coef_ #Các trọng số thuộc tính (w1 -> w5)
+net.intercept_ # w0
+net.n_iter_ # số lần lặp
+#net.score(X, y)*100
 
 y_pred = net.predict(X_test)
 
